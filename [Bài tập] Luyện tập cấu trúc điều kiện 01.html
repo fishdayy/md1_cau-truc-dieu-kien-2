@@ -9,12 +9,17 @@
 </body>
 </html>
 <script>
-    let nhapsonguyen = +prompt('nhập số nguyên');
-    if (nhapsonguyen > 0){
-        alert('lớn hơn 0')
-    }else if (nhapsonguyen < 0){
-        alert('nhỏ hơn 0')
-    }else {
-        alert('bằng 0')
+    let a = +prompt('nhập số a')
+    let b = +prompt('nhập số b')
+    let c = +prompt('nhập số c')
+    let max = a
+    if (max <= b){
+        max = b
+        if (max <= c){
+            max = c
+        }
     }
+    alert('max = '+ max)
+
+
 </script>
