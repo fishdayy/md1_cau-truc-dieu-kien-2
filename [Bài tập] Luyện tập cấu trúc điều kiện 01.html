@@ -9,10 +9,12 @@
 </body>
 </html>
 <script>
-    let nhaptuoi = +prompt('nhập tuổi');
-    if (nhaptuoi < 15){
-        alert('không đủ điều kiện vào học lớp 10')
+    let nhapsonguyen = +prompt('nhập số nguyên');
+    if (nhapsonguyen > 0){
+        alert('lớn hơn 0')
+    }else if (nhapsonguyen < 0){
+        alert('nhỏ hơn 0')
     }else {
-        alert('đủ điều kiện vào học lớp 10')
+        alert('bằng 0')
     }
 </script>
