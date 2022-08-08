@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chỉ số cân nặng của cơ thể</title>
+</head>
+<body>
+<h1>Tính chỉ số cân nặng</h1>
+<table>
+    <tr>
+        <td>
+            Nhập cân nặng: (kg)
+        </td>
+        <td>
+            <input type="number" name="cannang" id="kg" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Nhập chiều cao: (m)
+        </td>
+        <td>
+            <input type="number" name="chieucao" id="m" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="ketqua()">Kiểm tra</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p id="result"></p>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
+<script>
+    function ketqua() {
+        let cannang = document.getElementById('kg').value;
+        let chieucao = document.getElementById('m').value;
+        let bmi = cannang / (Math.pow(chieucao, 2));
+        if (bmi < 18)
+            document.write("thiếu cân");
+        else if (bmi < 25.0)
+            document.write("bình thường");
+        else if (bmi < 30.0)
+            document.write("thừa cân");
+        else
+            document.write("béo phì");
+        document.getElementById('result').innerHTML = "chỉ số BMI là: " + bmi;
+    }
+</script>
