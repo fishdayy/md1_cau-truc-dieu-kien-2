@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+  <tr>
+    <td colspan="4" height="20px" >
+      <input type="text" id="screen">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button name="so" value="1" onclick="nhap('1')">1</button>
+    </td>
+    <td>
+      <button name="so" value="2" onclick="nhap('2')">2</button>
+    </td>
+    <td>
+      <button name="so" value="3" onclick="nhap('3')">3</button>
+    </td>
+    <td>
+      <button name="tinh" value="+" onclick="nhap('+')">+</button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button name="so" value="4" onclick="nhap('4')">4</button>
+    </td>
+    <td>
+      <button name="so" value="5" onclick="nhap('5')">5</button>
+    </td>
+    <td>
+      <button name="so" value="6" onclick="nhap('6')">6</button>
+    </td>
+    <td>
+      <button name="tinh" value="-" onclick="nhap('-')">-</button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button name="so" value="7" onclick="nhap('7')">7</button>
+    </td>
+    <td>
+      <button name="so" value="8" onclick="nhap('8')">8</button>
+    </td>
+    <td>
+      <button name="so" value="9" onclick="nhap('9')">9</button>
+    </td>
+    <td>
+      <button name="tinh" value="x" onclick="nhap('*')">x</button>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <button name="reset" value="C" onclick="document.getElementById('screen').value = ''">C</button>
+    </td>
+    <td>
+      <button name="so" value="0" onclick="nhap('0')">0</button>
+    </td>
+    <td>
+      <button name="result" value="=" onclick="document.getElementById('screen').value = eval(document.getElementById('screen').value)">=</button>
+    </td>
+    <td>
+      <button name="tinh" value="/" onclick="nhap()">/</button>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+<script>
+  function nhap(c) {
+    document.getElementById('screen').value += c
+  }
+</script>
