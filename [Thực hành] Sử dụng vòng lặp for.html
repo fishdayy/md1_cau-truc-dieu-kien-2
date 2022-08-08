@@ -9,10 +9,11 @@
 </body>
 </html>
 <script>
-    let text = "";
-    let i;
-    for (i = 0; i < 6; i++) {
-        text += "The number is " + i + "<br>";
+    let num = prompt("nhập số: ");
+    let total = 0;
+    let i = 1;
+    for (;i<= num;i += 1){
+        total += i;
     }
-document.getElementById('ketqua').innerHTML = text;
+    alert(total);
 </script>
