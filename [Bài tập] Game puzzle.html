@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game puzzle</title>
+</head>
+<body>
+<img src="images/img-1.png" onclick="setImagesRandom()" alt="" id="img1" width="150px" height="150px">
+<img src="images/img-2.png" onclick="setImagesRandom()" alt="" id="img2" width="150px" height="150px">
+<img src="images/img-3.png" onclick="setImagesRandom()" alt="" id="img3" width="150px" height="150px">
+<br>
+<img src="images/img-4.png" onclick="setImagesRandom()" alt="" id="img4" width="150px" height="150px">
+<img src="images/img-5.png" onclick="setImagesRandom()" alt="" id="img5" width="150px" height="150px">
+<img src="images/img-6.png" onclick="setImagesRandom()" alt="" id="img6" width="150px" height="150px">
+<br>
+<img src="images/img-7.png" onclick="setImagesRandom()" alt="" id="img7" width="150px" height="150px">
+<img src="images/img-8.png" onclick="setImagesRandom()" alt="" id="img8" width="150px" height="150px">
+<img src="images/img-9.png" onclick="setImagesRandom()" alt="" id="img9" width="150px" height="150px">
+</body>
+</html>
+<script>
+
+    function setImagesRandom() {
+        for (var i=1; i <= 9; i++)
+        {
+            var num1 = Math.floor ((Math.random() * 3));
+            placeImage(i, num1);
+        }
+    }
+</script>
